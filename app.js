@@ -7,9 +7,9 @@ const data = {
   minutes: null,
   seconds: null,
   savings: null,
-  dollars: null,
-  cents: null,
-  dailyCost: 6.375466667,
+  pounds: null,
+  pence: null,
+  dailyCost: 11.81,
   time: 1569369600000 // new Date(2019, 8, 24, 19)
 };
 
@@ -28,15 +28,15 @@ function update() {
   data.minutes = seconds / 60;
   data.seconds = seconds;
   data.savings = data.days * data.dailyCost;
-  data.dollars = Math.floor(data.savings)
+  data.pounds = Math.floor(data.savings)
     .toString()
     .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  data.cents = (data.savings - Math.floor(data.savings))
+  data.pence = (data.savings - Math.floor(data.savings))
     .toFixed(2)
     .split(".")[1];
   updatePies();
-  document.getElementById("dollars").innerText = data.dollars;
-  document.getElementById("cents").innerText = data.cents;
+  document.getElementById("pounds").innerText = data.pounds;
+  document.getElementById("pence").innerText = data.pence;
 
   requestAnimationFrame(update);
 }
