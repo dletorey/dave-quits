@@ -1,0 +1,42 @@
+{
+    "lang": "en",
+    "name": "Dave Quits",
+    "short_name": "Dave Quits",
+    "description": "dave letorey quit nicotine on 18 Octber 2019. this is helping him along the way.",
+    "theme_color": "#ff0000",
+    "background_color": "#ff0000",
+    "start_url": "quit.letorey.co.uk/",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "./?a=3092",
+            "sizes": "48x48",
+            "type": "image/svg"
+        },
+        {
+            "src": "./?a=3092",
+            "sizes": "72x72",
+            "type": "image/svg"
+        },
+        {
+            "src": "./?a=3092",
+            "sizes": "96x96",
+            "type": "image/svg"
+        },
+        {
+            "src": "./?a=3092",
+            "sizes": "128x128",
+            "type": "image/svg"
+        },
+        {
+            "src": "./?a=3092",
+            "sizes": "256x256",
+            "type": "image/svg"
+        },
+        {
+            "src": "./?a=3092",
+            "sizes": "512x512",
+            "type": "image/svg"
+        }
+    ]
+}
